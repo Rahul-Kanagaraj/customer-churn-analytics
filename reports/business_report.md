@@ -1,77 +1,108 @@
 # Customer Churn Analytics Report
 
-## Business Problem
+---
 
-The objective of this project is to analyze telecom customer churn and identify factors contributing to customer attrition. The analysis also estimates revenue loss and predicts customers who are likely to churn.
+# Executive Summary
+
+This project analyzes customer churn using Python, SQL, statistical analysis, machine learning, and interactive dashboards.
+
+The objective is to identify factors contributing to customer churn, estimate revenue loss, and recommend strategies to improve customer retention.
 
 ---
 
-## Dataset
+# Dataset
 
 IBM Telco Customer Churn Dataset
 
-7043 Customers
-
-21 Original Features
+- 7,043 Customers
+- 21 Features
 
 ---
 
-## Objectives
+# Project Objectives
 
 - Understand customer churn patterns
+- Analyze customer behavior
 - Identify high-risk customers
-- Analyze revenue loss
+- Estimate revenue loss
 - Validate business assumptions using statistical testing
-- Build machine learning models
-- Develop an interactive dashboard
+- Predict customer churn using machine learning
+- Build an interactive business dashboard
 
 ---
 
-## Key Findings
+# Analysis Performed
 
-### Overall Churn
+## Data Cleaning
 
-Approximately 26% of customers have churned.
-
----
-
-### Contract Type
-
-Month-to-month contracts have the highest churn.
+- Missing Value Treatment
+- Duplicate Removal
+- Data Type Conversion
+- Feature Engineering
 
 ---
 
-### Internet Service
+## Exploratory Data Analysis
 
-Fiber optic customers exhibit higher churn than DSL customers.
+Performed analysis on:
+
+- Customer Demographics
+- Contract Type
+- Internet Services
+- Payment Methods
+- Monthly Charges
+- Revenue Trends
+- Customer Tenure
 
 ---
 
-### Revenue
+## Statistical Analysis
 
-Customers with higher monthly charges are more likely to churn.
+The following statistical techniques were applied:
+
+### Independent t-Test
+
+Monthly charges between churned and retained customers are significantly different.
 
 ---
 
-### Statistical Analysis
+### Chi-Square Test
 
-Independent t-Test
+Contract type and churn have a statistically significant relationship.
 
-The difference in monthly charges between churned and retained customers is statistically significant.
+---
 
-Chi-Square Test
+### ANOVA
 
-Contract type and churn are significantly associated.
+Monthly charges differ significantly across internet service types.
 
-ANOVA
+---
 
-Monthly charges vary significantly across internet service types.
+### Correlation Analysis
+
+Strong positive relationship between Total Charges and Customer Tenure.
+
+Negative relationship between Tenure and Churn.
+
+---
+
+## SQL Analysis
+
+Thirty business SQL queries were developed to analyze:
+
+- Overall Churn
+- Revenue Analysis
+- Customer Segmentation
+- Revenue Loss
+- High-Risk Customers
+- Customer Lifetime Value
+- Contract Analysis
 
 ---
 
 ## Machine Learning
 
-Models Built
+Three models were developed.
 
 - Logistic Regression
 - Random Forest
@@ -87,16 +118,84 @@ Evaluation Metrics
 
 ---
 
-## Business Recommendations
+# Dashboard
 
-- Encourage long-term contracts.
-- Offer retention incentives to month-to-month customers.
-- Improve customer service for Fiber Optic users.
-- Build an early warning churn prediction system.
-- Focus marketing campaigns on high-risk customers.
+The Streamlit dashboard contains:
+
+- Executive Dashboard
+- Customer Analysis
+- Revenue Analysis
+- Statistical Analysis
+- Machine Learning Dashboard
 
 ---
 
-## Conclusion
+# Key Business Insights
 
-Combining exploratory analysis, statistical testing, SQL analytics, machine learning, and interactive dashboards provides valuable insights for improving customer retention and reducing revenue loss.
+## Insight 1
+
+Month-to-month customers experience the highest churn.
+
+Recommendation
+
+Offer contract upgrade incentives.
+
+---
+
+## Insight 2
+
+Fiber optic customers have significantly higher churn.
+
+Recommendation
+
+Improve service quality and customer support.
+
+---
+
+## Insight 3
+
+Customers with higher monthly charges are more likely to churn.
+
+Recommendation
+
+Introduce personalized pricing and loyalty discounts.
+
+---
+
+## Insight 4
+
+Customers with low tenure exhibit higher churn probability.
+
+Recommendation
+
+Strengthen onboarding and engagement during the first year.
+
+---
+
+## Insight 5
+
+Machine learning models successfully identify customers with high churn risk.
+
+Recommendation
+
+Deploy predictive analytics for proactive retention campaigns.
+
+---
+
+# Estimated Business Impact
+
+Reducing churn by even 5% can:
+
+- Retain additional customers
+- Reduce recurring revenue loss
+- Improve customer lifetime value
+- Increase customer satisfaction
+- Improve long-term profitability
+
+---
+
+# Conclusion
+
+This project demonstrates an end-to-end data analytics workflow combining Python, SQL, statistical analysis, machine learning, and interactive dashboards.
+
+The analysis provides actionable business insights that can help organizations improve customer retention, reduce revenue loss, and support data-driven decision-making.
