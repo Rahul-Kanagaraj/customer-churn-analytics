@@ -346,3 +346,7 @@ https://github.com/Rahul-Kanagaraj
 LinkedIn
 
 https://www.linkedin.com/in/rahul-raj-kanagaraj-4435b7402
+
+## Live Dashboard
+
+[Open Streamlit Dashboard](https://customer-churn-analytics-ttujwtcbia9xvuchp73snz.streamlit.app/)
